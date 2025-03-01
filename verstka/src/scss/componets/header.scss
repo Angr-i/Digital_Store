@@ -7,21 +7,28 @@
   align-items: center;
   justify-content: left;
 }
-.header_walper::after {
-  position: absolute;
+.header-icon {
+  overflow: hidden;
+}
+.header-icon {
+  align-self: flex-start;
+  // position: absolute;
   content: '';
-  left: 85%;
-  top: 25%;
+  // left: 85%;
+  // top: 25%;
+  overflow: hidden;
   background-image: url('../img/header/bg-img.png');
   width: 140px;
   height: 140px;
   z-index: 999;
+  // clear: both;
+  // visibility: hidden;
 }
 
 .header-text {
   max-width: 610px;
   z-index: 2;
-  position: absolute;
+  // position: absolute;
 }
 .header_toptile {
   font-size: 16px;
@@ -59,5 +66,10 @@
 .header-img {
   z-index: 1;
   left: 30%;
-  position: relative;
+  // position: relative;
+  // max-width: 733px;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }

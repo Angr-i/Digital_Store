@@ -25,6 +25,9 @@ a {
 .container--no-pading {
   padding: 0;
 }
+.container--no-pading-right {
+  padding-right: 0;
+}
 
 * {
   background-repeat: no-repeat;
@@ -515,11 +518,14 @@ template {
   justify-content: left;
 }
 
-.header_walper::after {
-  position: absolute;
+.header-icon {
+  overflow: hidden;
+}
+
+.header-icon {
+  align-self: flex-start;
   content: "";
-  left: 85%;
-  top: 25%;
+  overflow: hidden;
   background-image: url("../img/header/bg-img.png");
   width: 140px;
   height: 140px;
@@ -529,7 +535,6 @@ template {
 .header-text {
   max-width: 610px;
   z-index: 2;
-  position: absolute;
 }
 
 .header_toptile {
@@ -571,7 +576,10 @@ template {
 .header-img {
   z-index: 1;
   left: 30%;
-  position: relative;
+}
+.header-img img {
+  max-width: 100%;
+  height: auto;
 }
 
 .nav {

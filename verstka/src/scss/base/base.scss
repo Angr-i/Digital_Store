@@ -23,6 +23,9 @@ a {
   &--no-pading {
     padding: 0;
   }
+  &--no-pading-right {
+    padding-right: 0;
+  }
 }
 * {
   background-repeat: no-repeat;
