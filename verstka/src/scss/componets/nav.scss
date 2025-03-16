@@ -110,3 +110,14 @@
     }
   }
 }
+@media (max-width: 1080px) {
+  .nav-input,
+  .nav-form,
+  .nav_menu {
+    display: none;
+  }
+  .nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

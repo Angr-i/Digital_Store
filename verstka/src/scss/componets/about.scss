@@ -7,6 +7,13 @@
   column-gap: 65px;
   padding-bottom: 100px;
 }
+.about_img {
+  // img {
+  //   max-width: 100%;
+  //   height: auto;
+  // }
+}
+
 .about_title {
   color: $primary;
   font-weight: 700;
@@ -41,6 +48,17 @@
     }
     &:hover {
       text-decoration: none;
+    }
+  }
+}
+@media (max-width: 1080px) {
+  .about_walper {
+    display: block;
+  }
+  .about_img {
+    img {
+      max-width: 100%;
+      height: auto;
     }
   }
 }

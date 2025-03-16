@@ -67,3 +67,33 @@
   text-align: center;
   padding-bottom: 20px;
 }
+.footer_basic {
+  display: flex;
+}
+@media (max-width: 1080px) {
+  .footer_walper {
+    display: block;
+  }
+  .footer_header {
+    margin-bottom: 40px;
+  }
+  .footer_list {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 31px;
+    letter-spacing: 0;
+  }
+  .footer_lists-title {
+    margin-bottom: 10px;
+  }
+  .footer_about-title {
+    margin-bottom: 10px;
+  }
+  .footer_subtitle {
+    margin-bottom: 20px;
+  }
+  .footer_about-header {
+    max-width: none;
+  }
+}

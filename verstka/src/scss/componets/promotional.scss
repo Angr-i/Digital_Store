@@ -14,6 +14,7 @@
   align-items: center;
 }
 .promotional-card {
+  position: relative;
   border-radius: 8px;
   padding-top: 25px;
   padding-left: 20px;
@@ -44,7 +45,26 @@
   }
 }
 .promotional_card-title {
-  min-width: 143px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  margin-bottom: 20px;
+  max-width: 160px;
+}
+.promotional_card-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  transition: background-color 1s, color 1s;
+  background-color: $light-gray-3;
+  color: $primary;
+  padding: 18px 40px;
+  border-radius: 8px;
+  &:hover {
+    background-color: $primary;
+    text-decoration: none;
+    color: $light-gray-3;
+  }
 }
 .product-model {
   margin-top: 100px;
@@ -70,5 +90,33 @@
   margin-right: 48px;
   &:last-child {
     margin-right: 0px;
+  }
+}
+.promotional_card-img {
+  img {
+    position: absolute;
+  }
+}
+@media (max-width: 1080px) {
+  .promotional-cards .promotional-card {
+    margin-right: 0;
+  }
+  .promotional-activities .promotional-cards {
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .promotional-card {
+    width: 340px;
+    height: 210px;
+  }
+  .promotional_card-title {
+    margin-bottom: 10px;
+  }
+  .promotional_card-button {
+    padding: 10px 20px;
+  }
+  .promotional_card-subtitle p {
+    margin-bottom: 5px;
   }
 }

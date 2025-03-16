@@ -35,6 +35,13 @@ a {
     max-width: 450px;
   }
 }
+@media (max-width: 1080px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .section {
   background-color: #f9f8fe;
 }
